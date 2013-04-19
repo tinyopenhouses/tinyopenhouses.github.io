@@ -2,8 +2,12 @@
 layout: default
 title: "Home"
 ---
-<section id='placeholder'>
-	This is a placeholder for what is to be the home of the Tiny Open Houses project where 
-	resources for those interested in living in a Tiny home of any sort are made available 
-	freely.
+
+<section id='designs'>
+	<h2>Designs	<small>Open Sourced by contributors and found on the net</small></h2>
+	<div class='row'>
+		{% for post in site.tags.Design %}
+	        {% include design-thumb.html %}
+	    {% endfor %}
+    </div>
 </section>
