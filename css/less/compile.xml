@@ -1,0 +1,7 @@
+<project basedir="." name="lessCompile">
+	<!-- Node lessc compiler with yui compression -->
+	<property name="wsf" location="lessc"/>  <!-- Eclipse doesn't recognize the ant script otherwise for some reason -->
+	<exec dir="${basedir}" executable="cmd">
+	   <arg line="/c lessc tiny-open-houses.less ../tiny-open-houses.css -x --yui-compress"/>
+	</exec>
+</project>
