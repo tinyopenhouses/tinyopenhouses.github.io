@@ -1,0 +1,25 @@
+/*
+*	Template used for responsive sizing of elements
+*
+*	Required Values: @fontSize, @imgHeight;
+*/
+#designs {
+
+	.item {
+		font-size: 	@fontSize;
+		height:		@imgHeight + ( @fontSize * 6 );
+		
+		h3 {
+			font-size: @fontSize * 2;
+			line-height: @fontSize * 2;
+		}
+		h4 {
+			font-size: @fontSize * 1.5;
+			line-height: @fontSize * 2;
+		}
+		
+		img {
+			max-height: @imgHeight;
+		}
+	}
+}

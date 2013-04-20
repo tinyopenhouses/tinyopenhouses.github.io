@@ -1,0 +1,19 @@
+#designs {
+	@fontSize: 	12px;
+	@imgHeight:	200px;
+	
+	.item {
+		height:		@imgHeight + ( @fontSize * 6 );
+		text-align: center;
+		font-size: 	@fontSize;
+		
+		h3, h4 {
+			line-height: @fontSize * 2;
+		}
+		img {
+			max-width: 	100%;
+			max-height: @imgHeight;
+			margin: 	0 auto;
+		}
+	}
+}
